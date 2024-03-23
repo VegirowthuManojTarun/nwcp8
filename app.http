@@ -1,0 +1,30 @@
+GET http://localhost:3000/todos
+
+GET http://localhost:3000/todos/?priority=HIGH
+
+
+GET http://localhost:3000/todos/?status=TO%20DO
+
+GET http://localhost:3000/todos/?search_q=Play
+###
+GET http://localhost:3000/todos/4/
+###
+POST http://localhost:3000/todos/
+Content-Type : application/json
+{
+        "id": 11,
+        "todo": "movie time",
+        "priority": "MEDIUM",
+        "status": "DONE"
+    },
+
+###
+PUT http://localhost:3000/todos/4/
+Content-Type : application/json
+  {
+        
+        "todo": "GO and COme"
+    }
+###
+
+DELETE http://localhost:3000/todos/11/
